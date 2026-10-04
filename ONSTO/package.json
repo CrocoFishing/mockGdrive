@@ -1,0 +1,28 @@
+{
+  "name": "onsto",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-bulma": "sass --load-path=node_modules my-bulma-project.scss my-bulma-project.css",
+    "start": "npm run build-bulma -- --watch"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bulma": "^1.0.4",
+    "sass": "^1.97.2",
+    "vue": "^3.5.26"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.3",
+    "sass-embedded": "^1.97.2",
+    "vite": "^7.3.0",
+    "vite-plugin-vue-devtools": "^8.0.5"
+  }
+}
